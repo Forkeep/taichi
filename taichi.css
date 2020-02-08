@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    border: 20px solid #794a29;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.taichi {
+    border-style: solid;
+    border-color: black;
+    border-width: 2px 100px 2px 2px;
+    border-radius: 100%;
+    height: 200px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    position: relative;
+    top: 30vh;
+    animation: circle;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: -1;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.taichi::before {
+    content: "";
+    border-style: solid;
+    border-color: white;
+    border-width: 40px;
+    background-color: black;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    box-sizing: border-box;
+    left: 50%;
+
+}
+
+.taichi::after {
+    content: "";
+    border-style: solid;
+    border-color: black;
+    border-width: 40px;
+    background-color: white;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.warpper {
+    border: 1px solid black;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.gua {
+    /*border: 1px solid red;*/
+    height: 60px;
+    width: 80px;
+    position: absolute;
+    top: 0;
+    display: inline-block;
+
+}
+
+.gua > .yao {
+    height: 10px;
+    width: 80px;
+    margin-top: 5px;
+    /*position: absolute;*/
+    background-color: #794a29;
+    /*box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);*/
+}
+
+.gua.ligua {
+    top:150px;
+    margin-left: -40px;
+}
+
+.gua.kangua {
+    top: 465px;
+    transform: rotate(-180deg);
+    margin-left: -40px;
+    display: inline;
+}
+
+
+.gua.zhengua {
+    top: 310px;
+    transform: rotate(-90deg);
+    margin-left: -200px;
+}
+
+
+.gua.duigua {
+    top: 310px;
+    transform: rotate(90deg);
+    margin-left: 120px;
+}
+
+
+
+.gua.kungua{
+    top: 200px;
+    transform: rotate(45deg);
+    margin-left: 80px;
+
+}
+
+.gua.qiangua{
+    top: 420px;
+    transform: rotate(135deg);
+    margin-left: 80px;
+
+}
+
+.gua.xungua{
+    top: 200px;
+    transform: rotate(-45deg);
+    margin-left: -160px;
+
+}
+
+.gua.gengua{
+    top:420px;
+    transform: rotate(-135deg);
+    margin-left: -155px;
+}
+
+
+.gua.kangua > .yao:nth-child(1)::before, .gua.kangua > .yao:nth-child(3)::before {
+    content: '';
+    height: 10px;
+    width: 30%;
+    background-color: white;
+    border: 0 solid #794a29;
+    position: absolute;
+    margin-left: -12px;
+    box-sizing: border-box;
+}
+
+.gua.duigua > .yao:nth-child(1)::before {
+    content: '';
+    height: 10px;
+    width: 30%;
+    background-color: white;
+    border: 0 solid #794a29;
+    position: absolute;
+    margin-left: -12px;
+    box-sizing: border-box;
+}
+
+.gua.zhengua > .yao:nth-child(1)::before, .gua.zhengua > .yao:nth-child(2)::before {
+    content: '';
+    height: 10px;
+    width: 30%;
+    background-color: white;
+    border: 0 solid #794a29;
+    position: absolute;
+    margin-left: -12px;
+    box-sizing: border-box;
+}
+
+.gua.ligua > .yao:nth-child(2)::before {
+    content: '';
+    height: 10px;
+    width: 30%;
+    background-color: white;
+    border: 0 solid #794a29;
+    position: absolute;
+    margin-left: -12px;
+    box-sizing: border-box;
+}
+
+
+.gua.xungua > .yao:nth-child(3)::before{
+    content: '';
+    height: 10px;
+    width: 30%;
+    background-color: white;
+    border: 0 solid #794a29;
+    position: absolute;
+    margin-left: -12px;
+    box-sizing: border-box;
+}
+
+
+
+.gua.kungua > .yao:nth-child(3)::before,.gua.kungua > .yao:nth-child(2)::before,.gua.kungua > .yao:nth-child(1)::before{
+    content: '';
+    height: 11px;
+    width: 30%;
+    background-color: white;
+    border: 0 solid #794a29;
+    position: absolute;
+    margin-left: -12px;
+    box-sizing: border-box;
+}
+
+.gua.gengua > .yao:nth-child(3)::before,.gua.gengua > .yao:nth-child(2)::before{
+    content: '';
+    height: 11px;
+    width: 30%;
+    background-color: white;
+    border: 0 solid #794a29;
+    position: absolute;
+    margin-left: -12px;
+    box-sizing: border-box;
+}
+
