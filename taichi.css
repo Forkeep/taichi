@@ -23,7 +23,7 @@ body {
     margin-right: auto;
     box-sizing: border-box;
     position: relative;
-    top: 30vh;
+    top: 235px;
     animation: circle;
     animation-delay: 2s;
     animation-duration: 2s;
