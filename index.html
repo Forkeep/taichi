@@ -4,58 +4,84 @@
     <meta charset="UTF-8">
     <title>太极</title>
     <link rel="stylesheet" href="taichi.css">
+    <link href="font.css" rel="stylesheet">
 </head>
 <body>
+<header>
+    <div class="doortitle" id="bagua">
+        <span class="title">太极八卦图</span>
+    </div>
+</header>
 <div class="warpper">
-    <div class="taichi"></div>
-    <div class="gua ligua">
-        离
-        <div class="yao"></div>
-        <div class="yao"></div>
-        <div class="yao"></div>
+    <div class="mask">
+        <div class="bagua" id="showBagua"></div>
+        <div class="taichi"></div>
+        <div class="gua ligua">
+            离
+            <div class="yao"></div>
+            <div class="yao"></div>
+            <div class="yao"></div>
+        </div>
+        <div class="gua kungua">
+            坤
+            <div class="yao"></div>
+            <div class="yao"></div>
+            <div class="yao"></div>
+        </div>
+        <div class="gua qiangua">
+            乾
+            <div class="yao"></div>
+            <div class="yao"></div>
+            <div class="yao"></div>
+        </div>
+        <div class="gua zhengua">
+            震
+            <div class="yao"></div>
+            <div class="yao"></div>
+            <div class="yao"></div>
+        </div>
+        <div class="gua xungua">
+            巽
+            <div class="yao"></div>
+            <div class="yao"></div>
+            <div class="yao"></div>
+        </div>
+        <div class="gua kangua">
+            坎
+            <div class="yao"></div>
+            <div class="yao"></div>
+            <div class="yao"></div>
+        </div>
+        <div class="gua gengua">
+            艮
+            <div class="yao"></div>
+            <div class="yao"></div>
+            <div class="yao"></div>
+        </div>
+        <div class="gua duigua">
+            兑
+            <div class="yao"></div>
+            <div class="yao"></div>
+            <div class="yao"></div>
+        </div>
+        <div class="text">
+            《易》也叫《易经》，经字特指原文内容。由于三易之中唯周易有幸传世，因此《易经》通常便泛指《周易》。后人对《周易》再作注解的版本众多，其中最早期的也是最著名的作品就是《易传》。所以，不要混淆《易经》跟《易传》，这是两个不同的概念。《易传》的上半部为“经”的部分，是引用《周易》的原文；《易传》的下半部为“传”的部分，是由孔子及弟子们联合撰写，对周易进行主观的个人见解注释，其实并不等同《周易》原文的真正内涵。“传”的内容包含〈彖辞〉上下、〈象辞〉上下、〈系辞〉上下、〈文言〉、〈序卦〉、〈说卦〉、〈杂卦〉共十篇，旧称《十翼》。
+        </div>
+        <div class="learn_more"><a href="//www.bilibili.com/video/av50276281?from=search&seid=15565223742118879982"
+                                   target="_blank">学习易经</a></div>
     </div>
-    <div class="gua kungua">
-        坤
-        <div class="yao"></div>
-        <div class="yao"></div>
-        <div class="yao"></div>
-    </div>
-    <div class="gua qiangua">
-        乾
-        <div class="yao"></div>
-        <div class="yao"></div>
-        <div class="yao"></div>
-    </div>
-    <div class="gua zhengua">
-        震
-        <div class="yao"></div>
-        <div class="yao"></div>
-        <div class="yao"></div>
-    </div>
-    <div class="gua xungua">
-        巽
-        <div class="yao"></div>
-        <div class="yao"></div>
-        <div class="yao"></div>
-    </div>
-    <div class="gua kangua">
-        坎
-        <div class="yao"></div>
-        <div class="yao"></div>
-        <div class="yao"></div>
-    </div>
-    <div class="gua gengua">
-        艮
-        <div class="yao"></div>
-        <div class="yao"></div>
-        <div class="yao"></div>
-    </div>
-    <div class="gua duigua">
-        兑
-        <div class="yao"></div>
-        <div class="yao"></div>
-        <div class="yao"></div>
-    </div>
+
+    <script>
+        document.getElementById('bagua').onmousemove = ()=>{
+            let content = document.getElementById('showBagua');
+            content.classList.add('active');
+        };
+        document.getElementById('bagua').onmouseleave = ()=>{
+            let content = document.getElementById('showBagua');
+            content.classList.remove('active');
+
+        }
+    </script>
 </div>
 </body>
 </html>

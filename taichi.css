@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Zhi Mang Xing', cursive;
 }
 
 body {
@@ -12,9 +13,80 @@ body {
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 
+header {
+    border: 1px solid black;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.doortitle {
+    /*border: 5px solid #794a29;*/
+    margin: 5px;
+    background-color: #794a29;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+header > span {
+
+}
+
+.warpper {
+    background-image: url("fugu.jpeg");
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    /*border: 1px solid red;*/
+    position: relative;
+    height: 92%;
+    width: 100%;
+    text-align: center;
+}
+
+.warpper > .mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+
+}
+
+.mask>.bagua{
+    /*border: 1px solid red;*/
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+    border-top-right-radius: 5%;
+    width: 840px;
+    height: 600px;
+    position: absolute;
+    background-image: url("64gua.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top:10px;
+    z-index: 1;
+    display: none;
+}
+.mask>.bagua::before{
+    content: '';
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid white;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top:-20px;
+    z-index: 1;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.mask>.bagua.active{
+    display: block;
+}
+
 .taichi {
     border-style: solid;
     border-color: black;
+    background-color: white;
     border-width: 2px 100px 2px 2px;
     border-radius: 100%;
     height: 200px;
@@ -23,15 +95,15 @@ body {
     margin-right: auto;
     box-sizing: border-box;
     position: relative;
-    top: 235px;
+    top: 135px;
     animation: circle;
     animation-delay: 2s;
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    z-index: -1;
-    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
 }
+
 
 .taichi::before {
     content: "";
@@ -73,21 +145,14 @@ body {
     }
 }
 
-.warpper {
-    border: 1px solid black;
-    position: relative;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
 
 .gua {
     /*border: 1px solid red;*/
     height: 60px;
     width: 80px;
     position: absolute;
-    top: 0;
     display: inline-block;
+    font-size: 20px;
 
 }
 
@@ -97,16 +162,16 @@ body {
     margin-top: 5px;
     /*position: absolute;*/
     background-color: #794a29;
-    /*box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);*/
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
 }
 
 .gua.ligua {
-    top:150px;
+    top: 50px;
     margin-left: -40px;
 }
 
 .gua.kangua {
-    top: 465px;
+    top: 365px;
     transform: rotate(-180deg);
     margin-left: -40px;
     display: inline;
@@ -114,125 +179,95 @@ body {
 
 
 .gua.zhengua {
-    top: 310px;
+    top: 210px;
     transform: rotate(-90deg);
     margin-left: -200px;
 }
 
 
 .gua.duigua {
-    top: 310px;
+    top: 210px;
     transform: rotate(90deg);
     margin-left: 120px;
+
 }
 
 
-
-.gua.kungua{
-    top: 200px;
+.gua.kungua {
+    top: 100px;
     transform: rotate(45deg);
     margin-left: 80px;
 
 }
 
-.gua.qiangua{
-    top: 420px;
+.gua.qiangua {
+    top: 320px;
     transform: rotate(135deg);
     margin-left: 80px;
 
 }
 
-.gua.xungua{
-    top: 200px;
+.gua.xungua {
+    top: 100px;
     transform: rotate(-45deg);
     margin-left: -160px;
 
 }
 
-.gua.gengua{
-    top:420px;
+.gua.gengua {
+    top: 320px;
     transform: rotate(-135deg);
     margin-left: -155px;
 }
 
 
-.gua.kangua > .yao:nth-child(1)::before, .gua.kangua > .yao:nth-child(3)::before {
-    content: '';
-    height: 10px;
-    width: 30%;
-    background-color: white;
-    border: 0 solid #794a29;
-    position: absolute;
-    margin-left: -12px;
-    box-sizing: border-box;
-}
-
-.gua.duigua > .yao:nth-child(1)::before {
-    content: '';
-    height: 10px;
-    width: 30%;
-    background-color: white;
-    border: 0 solid #794a29;
-    position: absolute;
-    margin-left: -12px;
-    box-sizing: border-box;
-}
-
-.gua.zhengua > .yao:nth-child(1)::before, .gua.zhengua > .yao:nth-child(2)::before {
-    content: '';
-    height: 10px;
-    width: 30%;
-    background-color: white;
-    border: 0 solid #794a29;
-    position: absolute;
-    margin-left: -12px;
-    box-sizing: border-box;
-}
-
+.gua.kangua > .yao:nth-child(1)::before,
+.gua.kangua > .yao:nth-child(3)::before,
+.gua.duigua > .yao:nth-child(1)::before,
+.gua.zhengua > .yao:nth-child(1)::before,
+.gua.zhengua > .yao:nth-child(2)::before,
+.gua.kungua > .yao:nth-child(3)::before,
+.gua.kungua > .yao:nth-child(2)::before,
+.gua.kungua > .yao:nth-child(1)::before,
+.gua.gengua > .yao:nth-child(3)::before,
+.gua.gengua > .yao:nth-child(2)::before,
+.gua.xungua > .yao:nth-child(3)::before,
 .gua.ligua > .yao:nth-child(2)::before {
     content: '';
-    height: 10px;
-    width: 30%;
-    background-color: white;
-    border: 0 solid #794a29;
-    position: absolute;
-    margin-left: -12px;
-    box-sizing: border-box;
-}
-
-
-.gua.xungua > .yao:nth-child(3)::before{
-    content: '';
-    height: 10px;
-    width: 30%;
-    background-color: white;
-    border: 0 solid #794a29;
-    position: absolute;
-    margin-left: -12px;
-    box-sizing: border-box;
-}
-
-
-
-.gua.kungua > .yao:nth-child(3)::before,.gua.kungua > .yao:nth-child(2)::before,.gua.kungua > .yao:nth-child(1)::before{
-    content: '';
     height: 11px;
     width: 30%;
-    background-color: white;
+    background-color: #b2b2b2;
     border: 0 solid #794a29;
     position: absolute;
     margin-left: -12px;
     box-sizing: border-box;
 }
 
-.gua.gengua > .yao:nth-child(3)::before,.gua.gengua > .yao:nth-child(2)::before{
-    content: '';
-    height: 11px;
-    width: 30%;
-    background-color: white;
-    border: 0 solid #794a29;
+.text{
+    font-family: 'STSong';
+    line-height: 40px;
+    font-size: 25px;
+    margin: 20px;
+    writing-mode: vertical-rl;
     position: absolute;
-    margin-left: -12px;
-    box-sizing: border-box;
+    right: 0;
+    top:0;
+}
+.learn_more{
+    /*border: 1px solid red;*/
+    height: 80px;
+    width: 200px;
+    position: absolute;
+    display: inline-block;
+    top:600px;
+    margin-left: -100px;
 }
 
+.learn_more > a{
+    text-decoration: blink;
+    color: black;
+    font-size: 50px;
+}
+.learn_more > a:hover{
+    color: yellow;
+}

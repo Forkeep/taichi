@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b748ab5-bab7-4121-a2e3-ce68e978edae" name="Default Changelist" comment="" />
+    <list default="true" id="3b748ab5-bab7-4121-a2e3-ce68e978edae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/64gua.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/fugu.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/zhouyi.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/taichi.css" beforeDir="false" afterPath="$PROJECT_DIR$/taichi.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +27,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1XVnl6WyR0EpxmXoVnM8JX2DEOa" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -31,6 +41,12 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/bagua.jpg" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -54,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581140277674</updated>
-      <workItem from="1581140278954" duration="7259000" />
+      <workItem from="1581140278954" duration="16406000" />
     </task>
     <servers />
   </component>
